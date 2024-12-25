@@ -1,4 +1,3 @@
-#write the psuedocode for the code and write what you are trying to do at the top of the code 
 
 
 from bs4 import BeautifulSoup  # For parsing HTML data
