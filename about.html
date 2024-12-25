@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Text</title>
+    <!--Google Fonts-->
+    <script src="https://kit.fontawesome.com/619eb0667d.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --color1: rgb(2, 3, 2);
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      a{
+        text-decoration: none;
+      }
+      .center {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: repeating-linear-gradient(
+            30deg,
+            rgb(25, 25, 25) 0px,
+            rgb(25, 25, 25) 2px,
+            transparent 2px,
+            transparent 35px
+          ),
+          repeating-linear-gradient(
+            -30deg,
+            rgb(25, 25, 25) 0px,
+            rgb(25, 25, 25) 2px,
+            transparent 2px,
+            transparent 35px
+          ),
+          rgb(41, 42, 45);
+        perspective: 1000px;
+      }
+      .text {
+        width: fit-content;
+        height: fit-content;
+        transform-style: preserve-3d;
+        display: flex;
+        transform: skew(60deg, 330deg) rotateX(45deg);
+      }
+      .letter {
+        width: fit-content;
+        height: fit-content;
+        transform-style: preserve-3d;
+        padding: 10px;
+        color: rgb(74, 74, 79);
+        cursor: pointer;
+      }
+      .letter span {
+        display: block;
+        font-family: poppins;
+        font-size: 120px;
+        font-weight: 800;
+        text-shadow: -1px 1px 0px var(--color1), -2px 2px 0px var(--color1),
+          -3px 3px 0px var(--color1), -4px 4px 0px var(--color1),
+          -5px 5px 0px var(--color1), -6px 6px 0px var(--color1),
+          -7px 7px 0px var(--color1), -8px 8px 0px var(--color1),
+          -9px 9px 0px var(--color1), -10px 10px 0px var(--color1),
+          -11px 11px 0px var(--color1), -12px 12px 0px var(--color1),
+          -13px 13px 1px var(--color1), -14px 14px 2px var(--color1),
+          -15px 15px 3px var(--color1);
+      }
+      .letter:hover {
+        color: rgb(255, 95, 107);
+        --color1: rgb(176, 18, 0);
+      }
+
+      .about h1{
+        margin-left: 200px;
+        max-width: 800px;
+        color: wheat;
+        font-weight: 800;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+    .social-icons{
+        margin-top: 30px;
+        margin-left: 200px;
+    }
+
+   .social-icons i{
+        font-size: 25px;
+        margin: 10px;
+        cursor: pointer;
+}
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="text">
+        <div class="letter">
+          <span><a href="index.html">A</a></span>
+        </div>
+        <div class="letter">
+          <span>B</span>
+        </div>
+        <div class="letter">
+          <span>O</span>
+        </div>
+        <div class="letter">
+          <span>U</span>
+        </div>
+        <div class="letter">
+          <span>T</span>
+        </div>
+        <div class="letter">
+          <span>:)</span>
+        </div>
+      </div>
+      <div class="about">
+        <h1>
+            || Discover the ultimate tool for managing your network with our innovative application!
+            It provides a dynamic and intuitive map of all devices connected to your internet gateway.
+            By plotting each IP address on a comprehensive visual interface, you can easily monitor, manage, and secure your network. ||
+      </h1><div class="social-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-behance"></i>
+      </div>
+      
+    </div>
+    </div>
+  </body>
+</html>

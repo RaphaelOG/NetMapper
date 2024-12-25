@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #353333; /* Light grey background for a modern feel */
+    color: #333; /* Dark text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.navbar .logo span{
+    color: chartreuse;
+}
+
+
+.navbar .map{
+    display: flex;
+    gap: 40px;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.navbar a:hover{
+    color: #6bb8ff;
+}
+/* Contact Container */
+.contact-container {
+    background: #fff; /* White background for the form */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Smooth shadow for depth */
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px;
+    background: #f9f9f9; /* Smooth, light background */
+    font-size: 16px;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    outline: none;
+    background: #fff;
+}
+
+/* Submit Button */
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background: #007BFF; /* Blue background for the button */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth transition on hover */
+}
+
+.form-group button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+/* Heading */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #666; /* Grey text for the description */
+    font-size: 14px;
+    line-height: 1.6;
+}
+
