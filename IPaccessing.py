@@ -12,7 +12,7 @@ import webbrowser  # For opening web pages
 
 
 # URL of the log file containing IP addresses
-url = "http://192.168.1.254/cgi-bin/logs.ha"#you would need to put your gateways ip log here
+url = "http://192.000.1.000/cgi-bin/logs.ha"#you would need to put your gateways ip log here
 
 # Default map location and settings
 default_location = [30, 0]
